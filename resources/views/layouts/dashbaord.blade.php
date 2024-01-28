@@ -110,7 +110,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="nav-link px-0 align-middle">
+                                                <a href="{{route('additems')}}" class="nav-link px-0 align-middle">
                                                     <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
                                             </li>
                                             <li>

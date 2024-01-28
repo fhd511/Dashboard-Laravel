@@ -105,7 +105,7 @@ class ItemsController extends Controller
         ]);
         $data->save();
         
-        return redirect('items',);
+        return redirect('dashboard.additems',);
     }
     public function DisplayItems()
     {
@@ -119,6 +119,12 @@ class ItemsController extends Controller
       $data=Itemgroup::All();
       
       return view('dashboard.addgroupsitem',['data'=>$data]);
+    }
+    public function displayadditems()
+    {
+      $data=Items::All();
+      
+      return view('dashboard.additems',['data'=>$data]);
     }
     public function logout()
     {

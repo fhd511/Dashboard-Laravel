@@ -39,6 +39,8 @@ route::get('/items',[ItemsController::class,'GetItems'])->name('items');
 route::post('saveitems',[ItemsController::class,'SaveItems'])->name('saveitems');
 route::get('/cpanel',[ItemsController::class,'DisplayItems'])->name('controlpanel')->middleware('auth');
 route::get('/addgritem',[ItemsController::class,'displayadditemsgroup'])->name('addgritem')->middleware('auth');
+route::get('/additems',[ItemsController::class,'displayadditems'])->name('additems')->middleware('auth');
+
 route::get('logout',[ItemsController::class,'logout'])->name('logout');
 
 route::get('/itemgroup',[ItemsController::class,'GetItemGroup'])->name('itemgroup');
